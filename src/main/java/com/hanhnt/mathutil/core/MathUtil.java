@@ -14,8 +14,9 @@ public class MathUtil {
             return 1;
         }
 
-        // BUG LẦN 1: Cố tình để product = 0 thay vì 1 để Unit Test bắt lỗi (MÀU ĐỎ)
-        long product = 0;
+        // LẦN 2 - ĐÃ SỬA LỖI (GREEN):
+        // Khởi tạo product = 1 để nhân dồn giai thừa chính xác
+        long product = 1;
         for (int i = 2; i <= n; i++) {
             product *= i;
         }
